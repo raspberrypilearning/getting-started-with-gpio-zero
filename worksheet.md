@@ -8,13 +8,13 @@ These pins allow the Raspberry Pi to control things in the real world. You can c
 
 There are 40 pins on the Raspberry Pi (26 pins on early models) - and some pins provide different functions to others.
 
-If you have a RasPIO pin label it can help to identify what each pin is used for. Make sure your pin label is placed with the keyring hole facing the USB ports, pointed outwards.
+If you have a RasPIO pin label it can help to identify what each pin is used for. Make sure your pin label is placed with the key-ring hole facing the USB ports, pointed outwards.
 
 ![](images/raspio-ports.jpg)
 
 If you don't have a pin label then this guide can help you to identify the pin numbers.
 
-![](images/pinout.jpg)
+![](images/pinout.png)
 
 You'll see pins labelled as 3V3, 5V, GND and GP2, GP3, etc.
 
@@ -176,7 +176,7 @@ GPIO Zero is a new Python library which provides a simple interface to everyday 
 
 1. It would be great if you could make the led switch on, only when the button is being held down. With gpiozero, that's easy.
 
-1. There are two methods of the Button class called `when_pressed` and `when_released`. These don't block the flow of the program, so if they are placed in a loop, the program will continue to cycle indefinately.
+1. There are two methods of the Button class called `when_pressed` and `when_released`. These don't block the flow of the program, so if they are placed in a loop, the program will continue to cycle indefinitely.
 
 1. Modify your code to look like this:
 
@@ -199,7 +199,7 @@ GPIO Zero is a new Python library which provides a simple interface to everyday 
 
 There are lots of other things to try with GPIO Zero. You can have a look at the [documentation here](http://pythonhosted.org/gpiozero/).
 
-Have a go at controlling other componenets, such as a:
+Have a go at controlling other components, such as a:
 - Buzzer
 - RGB LED
 - Motor
