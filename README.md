@@ -2,7 +2,7 @@
 
 ![](cover.png)
 
-The bank of pins along one side of the Raspberry Pi are called GPIO pins - General Purpose Input Output.
+The bank of pins along one side of the Raspberry Pi are called General-Purpose Input/Output (GPIO) pins.
 
 These pins allow the Raspberry Pi to control things in the real world. You can connect components to these pins: output devices like LEDs (light emitting diodes) which can be turned on and off at will; or input devices like a button or sensor which can be used to trigger events, such as turning on an LED when a button is pressed.
 
