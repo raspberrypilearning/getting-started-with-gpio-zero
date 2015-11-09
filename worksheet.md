@@ -23,7 +23,7 @@ You'll see pins labelled as 3V3, 5V, GND and GP2, GP3, etc:
 | 3V3 | 3.3 volts | Anything connected to these pins will always get 3.3V of power |
 | 5V | 5 volts | Anything connected to these pins will always get 5V of power |
 | GND | ground | Zero volts, used to complete a circuit |
-| GP2 | GPIO pin 2 | These pins are for general purpose use and can be configured as input or output pins |
+| GP2 | GPIO pin 2 | These pins are for general-purpose use and can be configured as input or output pins |
 | ID_SC/ID_SD/DNC | Special purpose pins | | |
 
 ## Lighting an LED
