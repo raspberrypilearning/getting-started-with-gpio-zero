@@ -123,10 +123,12 @@ Now you are able to control an output component - an LED, let's connect and cont
 	button.wait_for_press()
 	print('You pushed me')
 	```
+1. Save with **Ctrl + S** and run the code with **F5**. 
+1. Press the button for your text to appear. 
 
 ## Manually controlling the LED
 
-1. You can now combine your two programs to control the LED using the button.
+You can now combine your two programs written so far to control the LED using the button.
 
 1. Create a new file by clicking **File > New file**.
 
