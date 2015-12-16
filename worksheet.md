@@ -155,7 +155,7 @@ You can now combine your two programs written so far to control the LED using th
 
 ## Making a switch
 
-1. With a switch, a single press and release on the button would turn the LED on, and another press and release would turn it off again.
+With a switch, a single press and release on the button would turn the LED on, and another press and release would turn it off again.
 
 1. Modify your code so that it looks like this. You're using a flag called `active` to record the state of the LED. The line `active = not active` will switch the flag between `True` and `False`:
 
@@ -178,7 +178,7 @@ You can now combine your two programs written so far to control the LED using th
 
 	```
 
-1. It would be great if you could make the LED switch on only when the button is being held down. With GPIO Zero, that's easy.
+It would be great if you could make the LED switch on only when the button is being held down. With GPIO Zero, that's easy.
 
 1. There are two methods of the Button class called `when_pressed` and `when_released`. These don't block the flow of the program, so if they are placed in a loop, the program will continue to cycle indefinitely.
 
