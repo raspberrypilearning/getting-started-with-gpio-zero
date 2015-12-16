@@ -94,7 +94,7 @@ With the help of the `time` library and a little loop, you can make the LED flas
 
 1. Save with **Ctrl + S** and run the code with **F5**.
 
-1. The LED should be flashing. Press **Ctrl + C** to exit the program.
+1. The LED should be flashing on and off. To exit the program press **Ctrl + C** on your keyboard.
 
 ## Using buttons to get input
 
