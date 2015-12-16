@@ -69,7 +69,7 @@ GPIO Zero is a new Python library which provides a simple interface to everyday 
 
 ## Flashing an LED
 
-1. With the help of the `time` library and a little loop, you can make the LED flash.	
+With the help of the `time` library and a little loop, you can make the LED flash.	
 
 1. Create a new file by clicking **File > New file**.
 
