@@ -98,11 +98,11 @@ With the help of the `time` library and a little loop, you can make the LED flas
 
 ## Using buttons to get input
 
-1. Now connect a button to another GND pin and GPIO pin 2:
+Now you are able to control an output component - an LED, let's connect and control an input component - a button. 
+
+1. Connect a button to another GND pin and GPIO pin 2 like this:
 
     ![](images/button.png)
-
-1. First, test that your button is working.
 
 1. Create a new file by clicking **File > New file**.
 
