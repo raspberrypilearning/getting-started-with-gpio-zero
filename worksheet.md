@@ -186,15 +186,15 @@ It would be great if you could make the LED switch on only when the button is be
 
     ```python
     from gpiozero import LED, Button
-    from time import sleep
+    from signal import pause
 
     led = LED(17)
     button = Button(2)
 
-    while True:
-		button.when_pressed = led.on
-		button.when_released = led.off
+    button.when_pressed = led.on
+    button.when_released = led.off
 
+    pause()
     ```
 
 1. Save and run the program. Now when the button is pressed, the LED will light up and will turn off again when the button is released.
