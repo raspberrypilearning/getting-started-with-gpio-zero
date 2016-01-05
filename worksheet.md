@@ -46,7 +46,7 @@ GPIO Zero is a new Python library which provides a simple interface to everyday 
 
 1. Open Python 3 from the main menu.
 
-1. You can switch an LED on and off by typing commands directly into the Python interpretor window (also known as the Python shell). Let's do this by first, importing the GPIO Zero library. You also need to tell the Pi which GPIO pin you are using - in this case pin 17. Next to the chevrons `>>>` type:
+1. You can switch an LED on and off by typing commands directly into the Python interpretor window (also known as the Python shell). Let's do this by first, importing the GPIO Zero library. You also need to tell the Pi which GPIO pin you are using - in this case pin 17. Next to the chevrons `>>>`, type:
 
 	```python
 	from gpiozero import LED
