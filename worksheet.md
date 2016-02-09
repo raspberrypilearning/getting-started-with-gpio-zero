@@ -197,10 +197,10 @@ It would be great if you could make the LED switch on only when the button is be
     pause()
     ```
 
-1. Save and run the program. Now when the button is pressed, the LED will light up and will turn off again when the button is released.
+1. Save and run the program. Now when the button is pressed, the LED will light up. It will turn off again when the button is released.
 
 ## What next?
 
-There are lots of other things to try with GPIO Zero. You can have a look at the [documentation here](http://pythonhosted.org/gpiozero/).
+There are lots of other things to try with GPIO Zero. You can have a look at the documentation [here](http://pythonhosted.org/gpiozero/).
 
-Have a go at controlling other components, such as a buzzer, RGB LED, motor or robot.
+Have a go at controlling other components, such as a buzzer, RGB LED, motor, or robot.
