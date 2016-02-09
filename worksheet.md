@@ -8,7 +8,7 @@ These pins allow the Raspberry Pi to control things in the real world. You can c
 
 There are 40 pins on the Raspberry Pi (26 pins on early models), and the pins provide various different functions.
 
-If you have a RasPIO pin label it can help to identify what each pin is used for. Make sure your pin label is placed with the keyring hole facing the USB ports, pointed outwards.
+If you have a RasPIO pin label, it can help to identify what each pin is used for. Make sure your pin label is placed with the keyring hole facing the USB ports, pointed outwards.
 
 ![](images/raspio-ports.jpg)
 
@@ -38,7 +38,7 @@ Now try moving it from 3V3 to GPIO pin 17:
 
 ![](images/led-gpio17.png)
 
-The LED should now turn off, but now it's on a GPIO pin, it can be controlled by code.
+The LED should now turn off, but now it's on a GPIO pin, and can therefore be controlled by code.
 
 ## Switching an LED on and off
 
