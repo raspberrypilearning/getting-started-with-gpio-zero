@@ -1,8 +1,7 @@
 # Software Installation
 
-To install the software you need, run the following commands in LXTerminal:
+To install the software you need, run the following commands in the Terminal:
 
 ```bash
-sudo apt-get install python3-pip python3-w1thermsensor python3-spidev
-sudo pip-3.2 install gpiozero
+sudo apt-get install python3-gpiozero
 ```
