@@ -1,0 +1,36 @@
+---
+title: Getting Started With GPIO Zero
+hero_image: images/banner.png
+description: 
+original_url: https://raspberrypi.org/learning/getting-started-with-gpio-zero
+theme: red
+duration: 2
+listed: false
+ingredient: false
+copyedit: true
+curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
+interests: ''
+technologies: rpi, physical computing, python
+site_areas: ''
+steps:
+- title: Introduction
+- title: What you will need
+- title: Empezando a controlar pins con GPIO Zero
+- title: 'Pins GPIO '
+- title: Encender un LED
+- title: Encendiendo y apagando un LED
+- title: Haciendo parpadear el LED
+- title: Usando los botones para tener una entrada
+- title: Controlando un LED manualmente
+- title: Haciendo un interruptor
+- title: Y ahora qué?
+- title: Getting started with GPIO Zero
+- title: GPIO pins
+- title: Lighting an LED
+- title: Switching an LED on and off
+- title: Flashing an LED
+- title: Using buttons to get input
+- title: Manually controlling the LED
+- title: Making a switch
+- title: What next?
+
