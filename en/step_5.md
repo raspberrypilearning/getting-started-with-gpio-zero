@@ -1,13 +1,27 @@
-## Encender un LED
-Prueba a conectar un LED a los pins de 3.3V y GND con una resistencia.
+## Switching an LED on and off
 
-![](images/led-3v3.png)
+GPIO Zero is a new Python library which provides a simple interface to everyday GPIO components.
 
-El LED se debería encender. Siempre estará encendido, porque está conectado a un pin de 3.3 voltios.
+- Open Python 3 from the main menu.
 
-Ahora prueba a moverlo del pin 3.3V al pin GPIO 17:
+- You can switch an LED on and off by typing commands directly into the Python interpretor window (also known as the Python shell). Let's do this by first, importing the GPIO Zero library. You also need to tell the Pi which GPIO pin you are using - in this case pin 17. Next to the chevrons `>>>`, type:
 
-![](images/led-gpio17.png)
+	```python
+	from gpiozero import LED
+	led = LED(17)
 
-El LED ahora se debería apagar, pero como está conectado a un pin GPIO podemos controlarlo con código.
+	```
+	Press **Enter** on the keyboard.
+
+- To make the LED switch on, type the following and press enter:
+
+	```python
+	led.on()
+	```
+
+- To make it switch off you can type:
+
+	```python
+	led.off()
+	```
 

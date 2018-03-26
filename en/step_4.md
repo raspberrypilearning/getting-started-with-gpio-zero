@@ -1,25 +1,14 @@
-## Pins GPIO 
+## Lighting an LED
 
-Al conjunto de pines que se encuentran a un lado de la Raspberry Pi se les llama pins GPIO (General-Purpose Input/Output) o Entradas y Salidas de Propósito General.
+Try connecting an LED to the Pi's 3V3 and GND pins with a resistor:
 
-Estos pines permiten a la Raspberry controlar cosas en el mundo real. Puedes conectar componentes electrónicos a estos pines: estos componentes pueden ser de salida, como los LEDs (Diodos Emisores de Luz) que se pueden encender y apagar a voluntad, o componentes de entrada, como un botón o un sensor que puedes usar para disparar otros eventos. Por ejemplo, puedes encender un LED cada vez que detectes que un botón ha sido pulsado. 
+![](images/led-3v3.png)
 
-Con la librería GPIO Zero, podrás controlar los pins GPIO de la Raspberry de manera sencilla. Hay 40 pins en la Raspberry Pi (26 en los modelos más antiguos) que permiten diferentes funciones.
+The LED should light up. It will always be on, because it's connected to a 3V3 pin.
 
-La etiqueta de identificación RasPIO puede ayudarte a identificar cuál es el uso de cada pin. Asegúrate de que la etiqueta está colocada de manera que el pequeño agujero quede al lado de los puertos USB, ligeramente hacia afuera de la placa.
+Now try moving it from 3V3 to GPIO pin 17:
 
-![](images/raspio-ports.jpg)
+![](images/led-gpio17.png)
 
-Si no tienes una etiqueta, esta guía puede ayudarte a identificar el número de cada pin.
-
-![](images/pinout.png)
-
-Verás que hay pins que están marcados con 3V3, 5V, GND y GP2, GP3, etc:
-|     |     |     |
-| --- | --- | --- |
-|3V3|3.3 voltios|Cualquier cosa que conectes a estos pins recibirá un voltaje de 3.3V|
-|5V|5 voltios|Cualquier cosa que conectes a estos pins recibirá un voltaje de 5V|
-|GND|Tierra|Tierra o cero voltios, usado para cerrar el circuito.|
-|GP2|GPIO pin 2|Estos pines son de propósito general y se pueden configurar como entrada o como salida
-|ID_SC/ID_SD/DNC|Pins de propósito especial|
+The LED should now turn off, but now it's on a GPIO pin, and can therefore be controlled by code.
 

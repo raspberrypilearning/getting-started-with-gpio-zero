@@ -1,25 +1,30 @@
-## Haciendo parpadear el LED
+## Using buttons to get input
 
-Con la ayuda de la librería time y un pequeño bucle, podemos hacer que el LED parpadee.
+Now you are able to control an output component - an LED, let's connect and control an input component - a button. 
 
-- Crea un nuevo archivo en **Archivo** > **Archivo nuevo**.
-- Guarda el archivo en **Archivo** > **Guardar**.
-- Guarda el archivo como `gpio_led.py`
-- Escribe el siguiente código para empezar:
+- Connect a button to another GND pin and GPIO pin 2 like this:
 
-	``` python
-	from gpiozero import LED
-	from time import sleep
+    ![](images/button.png)
 
-	led = LED(17)
+- Create a new file by clicking **File > New file**.
 
-	while True:
-		led.on()
-		sleep(1)
-		led.off()
-		sleep(1)
+- Save the new file by clicking **File > Save**.
 
+- Save the file as `gpio_button.py`.
+
+- This time you'll need the Button class, and to tell it that the button is on pin 2. Write the following code in your new file:
+
+	```python
+	from gpiozero import Button
+	button = Button(2)
 	```
-14. Guarda con **Ctrl + s** y ejecuta el código con **F5**.
-15. El LED debería estar encendiéndose y apagándose continuamente. Para salir del programa pulsa **Ctrl + c** en el teclado.
+
+- Now you can get your program to do something when the button is pushed. Add these lines:
+
+	```python
+	button.wait_for_press()
+	print('You pushed me')
+	```
+- Save with **Ctrl + S** and run the code with **F5**. 
+- Press the button for your text to appear. 
 

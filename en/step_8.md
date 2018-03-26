@@ -1,28 +1,27 @@
-## Usando los botones para tener una entrada
-Ahora eres capaz de controlar un componente de salida, un LED. Vamos a conectar y controlar un componente de entrada: un botón.
+## Manually controlling the LED
 
-- Conecta un botón a un pin GND y a al pin 2 GPIO, como se muestra en el diagrama:
+You can now combine your two programs written so far to control the LED using the button.
 
-    ![](images/button.png)
+- Create a new file by clicking **File > New file**.
+
+- Save the new file by clicking **File > Save**.
+
+- Save the file as `gpio_control.py`.
+
+- Now write the following code:
+
+	```python
+	from gpiozero import LED, Button
+	from time import sleep
 	
-- Crea un nuevo archivo en **Archivo** > **Archivo nuevo**.
-- Guarda el archivo en **Archivo** > **Guardar**.
-- Guarda el archivo como `gpio_button.py`.
-
-- Esta vez necesitarás la clase Button (botón en inglés), y declarar que el botón estará en el pin 2. Escribe el siguiente código en tu archivo: 
-
-	``` python
-	from gpiozero import Button
+	led = LED(17)
 	button = Button(2)
+
+    button.wait_for_press()
+    led.on()
+	sleep(3)
+	led.off()
 	```
+	
+- Save and run your program. When you push the button the LED should come on for three seconds.
 
-- Ahora puedes hacer que el programa haga algo cuando el botón esté pulsado. Prueba a añadir esta línea:
-
-	``` python
-	button.wait_for_press()
-	print('Me has apretado')
-	```
-
-- Guarda con **Ctrl + S** y ejecuta el código con **F5**.
-- Pulsa el botón y verás cómo tu texto aparece en pantalla.
- 

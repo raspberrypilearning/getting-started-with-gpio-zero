@@ -1,26 +1,29 @@
-## Encendiendo y apagando un LED
+## Flashing an LED
 
-GPIO Zero es una nueva librería de Python que proporciona una interfaz sencilla para interactuar con componentes a través de los pines GPIO
-- Abre Python 3 desde el menú principal
+With the help of the `time` library and a little loop, you can make the LED flash.	
 
-- Puedes encender y apagar un LED tecleando comandos directamente en la ventana del intérprete de Python (también llamada Python shell). Vamos a hacerlo así primero, importando la librería GPIO Zero. También es necesario establecer qué pin GPIO es el que vamos a usar; en este caso será el 17.  Junto a los símbolos `>>>`, teclea:
+- Create a new file by clicking **File > New file**.
 
-	``` python
-	from gpiozero import LED
-	
-	led = LED(17)
-	```
-Pulsa **Enter** en el teclado.
+- Save the new file by clicking **File > Save**.
 
-- Para que hacer que el LED se encienda, escribe la siguiente línea y pulsa Enter:
+- Save the file as `gpio_led.py`.
 
-	``` python
-	led.on()
-	```
+- Enter the following code to get started:
 
-- Para apagar el LED puedes teclear:
+    ```python
+    from gpiozero import LED
+    from time import sleep
 
-	``` python
-	led.off()
-	```
-	
+    led = LED(17)
+
+    while True:
+        led.on()
+        sleep(1)
+        led.off()
+        sleep(1)
+    ```
+
+- Save with **Ctrl + S** and run the code with **F5**.
+
+- The LED should be flashing on and off. To exit the program press **Ctrl + C** on your keyboard.
+
